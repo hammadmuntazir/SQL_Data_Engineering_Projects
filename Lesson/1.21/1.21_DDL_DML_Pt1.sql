@@ -1,6 +1,6 @@
 -- if wanna run all this file 
 --  .read 'Lesson\1.21\1.21_DDL_DML_Pt1.sql'
-USE data_jobs;
+-- USE data_jobs;
 USE job_mart;
 DROP DATABASE IF EXISTS jobs_mart;
 
