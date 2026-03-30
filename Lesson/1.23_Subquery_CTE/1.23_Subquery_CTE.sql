@@ -4,7 +4,7 @@ FROM (
     SELECT * 
     FROM job_postings_fact
     WHERE salary_year_avg IS NOT NULL
-        OR salary_year_avg IS NOT NULL
+        OR salary__hour_avg IS NOT NULL
 ) AS valid_salaries
 LIMIT 10;
 -- CTE 
