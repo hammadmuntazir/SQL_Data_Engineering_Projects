@@ -7,25 +7,8 @@ CREATE OR REPLACE TABLE main.priority_jobs_snapshot(
     priority_lvl INTEGER,
     updated_at TIMESTAMP
 );
-CREATE OR REPLACE TABLE main.priority_jobs_snapshot(
-    job_id INTEGER PRIMARY KEY,
-    job_title_short VARCHAR,
-    company_name VARCHAR,
-    job_posted_date TIMESTAMP,
-    salary_year_avg DOUBLE,
-    priority_lvl INTEGER,
-    update_at TIMESTAMP
-)
-INSERT INTO main.priority_jobs_snapshot(
-    job_id,
-    job_title_short,
-    company_name,
-    job_posted_date,
-    salary_year_avg,
-    priority_lvl,
-    update_at
-)
-VALUES
+
+
 INSERT INTO main.priority_jobs_snapshot(
     job_id,
     job_title_short,
@@ -57,5 +40,5 @@ SELECT
     MIN(priority_lvl) AS priority_lvl,
     MIN(updated_at) AS updated_at 
 FROM priority_jobs_snapshot
-GROUP BY job_title_short,
+GROUP BY job_title_short
 ORDER BY job_count DESC;
