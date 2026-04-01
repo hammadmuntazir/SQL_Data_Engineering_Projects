@@ -41,4 +41,8 @@ SELECT
     MIN(updated_at) AS updated_at 
 FROM priority_jobs_snapshot
 GROUP BY job_title_short
+<<<<<<< HEAD
 ORDER BY job_count DESC;
+=======
+ORDER BY job_count DESC;
+>>>>>>> feature/project2-readme

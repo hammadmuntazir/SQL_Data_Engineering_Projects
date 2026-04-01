@@ -61,7 +61,7 @@ INNER JOIN staging.priority_roles AS r
 
 -- MERGE INTO 
 MERGE INTO  main.priority_jobs_snapshot AS tgt 
-USING src_priorty_jobs AS src
+USING src_priority_jobs AS src
 ON tgt.job_id=src.job_id 
 
 WHEN MATCHED AND tgt.priority_lvl IS DISTINCT FROM src.priority_lvl THEN 
@@ -90,13 +90,3 @@ WHEN NOT MATCHED THEN
         )
     
 WHEN NOT MATCHED BY SOURCE THEN DELETE;
-
-SELECT
-    job_title_short,
-    COUNT(*) AS job_count,
-    MIN(priority_lvl) AS priority_lvl,
-    MIN(updated_at) AS updated_at 
-FROM priority_jobs_snapshot
-GROUP BY job_title_short,
-ORDER BY job_count DESC;
-
