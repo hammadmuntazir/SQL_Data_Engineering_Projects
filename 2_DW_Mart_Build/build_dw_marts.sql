@@ -16,4 +16,4 @@
 .read 05_create_priority_mart.sql
 
 -- Step 6 : Mart -Update priority mart
-.read 06_update_priority_mart.sql.
+.read 06_update_priority_mart.sql
