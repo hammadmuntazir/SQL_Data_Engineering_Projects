@@ -10,7 +10,7 @@ The following projects are a collection of SQL projects  that I have worked on t
 ![Project 1 Overview](/images/1_1_Project1_EDA.png)
 SQL-driven analysis of data engineer job market trend using advanced querying techniques.
 
-
+---
 ### [2_DW_Mart_Build/](/2_DW_Mart_Build/) - Data Pipeline - Data Warehouse & Mart
 
 ![Data Pipeline Architecture](images/1_2_Project2_Data_Pipeline.png)
